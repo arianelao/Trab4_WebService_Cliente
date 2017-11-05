@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://ws.serv/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="Servidor_WebService" targetNamespace="http://ws.serv/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/Trab4_WebService_Servidor/Servidor_WebService?xsd=1" namespace="http://ws.serv/" />
+    </xsd:schema>
+  </types>
+  <message name="Ler_vendas">
+    <part name="parameters" element="tns:Ler_vendas" />
+  </message>
+  <message name="Ler_vendasResponse">
+    <part name="parameters" element="tns:Ler_vendasResponse" />
+  </message>
+  <message name="cadastra_interesse_compra">
+    <part name="parameters" element="tns:cadastra_interesse_compra" />
+  </message>
+  <message name="cadastra_interesse_compraResponse">
+    <part name="parameters" element="tns:cadastra_interesse_compraResponse" />
+  </message>
+  <message name="verificar_situacao_CompraVenda">
+    <part name="parameters" element="tns:verificar_situacao_CompraVenda" />
+  </message>
+  <message name="verificar_situacao_CompraVendaResponse">
+    <part name="parameters" element="tns:verificar_situacao_CompraVendaResponse" />
+  </message>
+  <message name="Ler_compras">
+    <part name="parameters" element="tns:Ler_compras" />
+  </message>
+  <message name="Ler_comprasResponse">
+    <part name="parameters" element="tns:Ler_comprasResponse" />
+  </message>
+  <message name="cadastra_interesse_venda">
+    <part name="parameters" element="tns:cadastra_interesse_venda" />
+  </message>
+  <message name="cadastra_interesse_vendaResponse">
+    <part name="parameters" element="tns:cadastra_interesse_vendaResponse" />
+  </message>
+  <message name="cadastraUsuario">
+    <part name="parameters" element="tns:cadastraUsuario" />
+  </message>
+  <message name="cadastraUsuarioResponse">
+    <part name="parameters" element="tns:cadastraUsuarioResponse" />
+  </message>
+  <message name="consultar">
+    <part name="parameters" element="tns:consultar" />
+  </message>
+  <message name="consultarResponse">
+    <part name="parameters" element="tns:consultarResponse" />
+  </message>
+  <portType name="Servidor_WebService">
+    <operation name="Ler_vendas">
+      <input wsam:Action="http://ws.serv/Servidor_WebService/Ler_vendasRequest" message="tns:Ler_vendas" />
+      <output wsam:Action="http://ws.serv/Servidor_WebService/Ler_vendasResponse" message="tns:Ler_vendasResponse" />
+    </operation>
+    <operation name="cadastra_interesse_compra">
+      <input wsam:Action="http://ws.serv/Servidor_WebService/cadastra_interesse_compraRequest" message="tns:cadastra_interesse_compra" />
+      <output wsam:Action="http://ws.serv/Servidor_WebService/cadastra_interesse_compraResponse" message="tns:cadastra_interesse_compraResponse" />
+    </operation>
+    <operation name="verificar_situacao_CompraVenda">
+      <input wsam:Action="http://ws.serv/Servidor_WebService/verificar_situacao_CompraVendaRequest" message="tns:verificar_situacao_CompraVenda" />
+      <output wsam:Action="http://ws.serv/Servidor_WebService/verificar_situacao_CompraVendaResponse" message="tns:verificar_situacao_CompraVendaResponse" />
+    </operation>
+    <operation name="Ler_compras">
+      <input wsam:Action="http://ws.serv/Servidor_WebService/Ler_comprasRequest" message="tns:Ler_compras" />
+      <output wsam:Action="http://ws.serv/Servidor_WebService/Ler_comprasResponse" message="tns:Ler_comprasResponse" />
+    </operation>
+    <operation name="cadastra_interesse_venda">
+      <input wsam:Action="http://ws.serv/Servidor_WebService/cadastra_interesse_vendaRequest" message="tns:cadastra_interesse_venda" />
+      <output wsam:Action="http://ws.serv/Servidor_WebService/cadastra_interesse_vendaResponse" message="tns:cadastra_interesse_vendaResponse" />
+    </operation>
+    <operation name="cadastraUsuario">
+      <input wsam:Action="http://ws.serv/Servidor_WebService/cadastraUsuarioRequest" message="tns:cadastraUsuario" />
+      <output wsam:Action="http://ws.serv/Servidor_WebService/cadastraUsuarioResponse" message="tns:cadastraUsuarioResponse" />
+    </operation>
+    <operation name="consultar">
+      <input wsam:Action="http://ws.serv/Servidor_WebService/consultarRequest" message="tns:consultar" />
+      <output wsam:Action="http://ws.serv/Servidor_WebService/consultarResponse" message="tns:consultarResponse" />
+    </operation>
+  </portType>
+  <binding name="Servidor_WebServicePortBinding" type="tns:Servidor_WebService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="Ler_vendas">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="cadastra_interesse_compra">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="verificar_situacao_CompraVenda">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="Ler_compras">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="cadastra_interesse_venda">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="cadastraUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="consultar">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="Servidor_WebService">
+    <port name="Servidor_WebServicePort" binding="tns:Servidor_WebServicePortBinding">
+      <soap:address location="http://localhost:8080/Trab4_WebService_Servidor/Servidor_WebService" />
+    </port>
+  </service>
+</definitions>

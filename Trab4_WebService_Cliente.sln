@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Trab4_WebService_Cliente", ".", "{8D8E8871-CA50-47DE-8CEA-87121CFBD44E}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_59514"
+		Debug.AspNetCompiler.PhysicalPath = "..\Trab4_WebService_Cliente\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59514\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_59514"
+		Release.AspNetCompiler.PhysicalPath = "..\Trab4_WebService_Cliente\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59514\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "59514"
+		SlnRelativePath = "..\Trab4_WebService_Cliente\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D8E8871-CA50-47DE-8CEA-87121CFBD44E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D8E8871-CA50-47DE-8CEA-87121CFBD44E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A22572FA-AB3F-44F4-9A96-062E0D6919B3}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://ws.serv/" targetNamespace="http://ws.serv/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Ler_compras" type="tns:Ler_compras" />
+  <xs:element name="Ler_comprasResponse" type="tns:Ler_comprasResponse" />
+  <xs:element name="Ler_vendas" type="tns:Ler_vendas" />
+  <xs:element name="Ler_vendasResponse" type="tns:Ler_vendasResponse" />
+  <xs:element name="cadastraUsuario" type="tns:cadastraUsuario" />
+  <xs:element name="cadastraUsuarioResponse" type="tns:cadastraUsuarioResponse" />
+  <xs:element name="cadastra_interesse_compra" type="tns:cadastra_interesse_compra" />
+  <xs:element name="cadastra_interesse_compraResponse" type="tns:cadastra_interesse_compraResponse" />
+  <xs:element name="cadastra_interesse_venda" type="tns:cadastra_interesse_venda" />
+  <xs:element name="cadastra_interesse_vendaResponse" type="tns:cadastra_interesse_vendaResponse" />
+  <xs:element name="consultar" type="tns:consultar" />
+  <xs:element name="consultarResponse" type="tns:consultarResponse" />
+  <xs:element name="verificar_situacao_CompraVenda" type="tns:verificar_situacao_CompraVenda" />
+  <xs:element name="verificar_situacao_CompraVendaResponse" type="tns:verificar_situacao_CompraVendaResponse" />
+  <xs:complexType name="cadastra_interesse_venda">
+    <xs:sequence>
+      <xs:element name="id_usuario" type="xs:int" />
+      <xs:element minOccurs="0" name="nome_empresa" type="xs:string" />
+      <xs:element name="qtdAcao" type="xs:int" />
+      <xs:element name="vlrMin" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cadastra_interesse_vendaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cadastra_interesse_compra">
+    <xs:sequence>
+      <xs:element name="id_usuario" type="xs:int" />
+      <xs:element minOccurs="0" name="empresa" type="xs:string" />
+      <xs:element name="qtdAcao" type="xs:int" />
+      <xs:element name="vlrMax" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cadastra_interesse_compraResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="consultar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="NomeEmpresa" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="consultarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="verificar_situacao_CompraVenda">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="operacao" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="verificar_situacao_CompraVendaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cadastraUsuario">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="cadastraUsuarioResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Ler_vendas">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="Ler_vendasResponse">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="Ler_compras">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="Ler_comprasResponse">
+    <xs:sequence />
+  </xs:complexType>
+</xs:schema>
