@@ -31,7 +31,6 @@ public partial class SessaoCliente : System.Web.UI.Page
 
         if (usuario != null)
         {
-            //Server.Transfer("Default.aspx", false);
             Server.TransferRequest("Default.aspx", false, "GET", null,true) ;
         }
         
